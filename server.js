@@ -7,7 +7,7 @@ var cors = require('koa2-cors');
 var app = new koa();
 app.use(cors());
 app.use(async(ctx, next) => {
-    console.log(ctx.request)
+    //console.log(ctx.request)
     //这里可以处理请求中转到服务器之前，操作一下token和参数之类的。
     await next();
     // console.log(JSON.stringify(ctx.response.body));
